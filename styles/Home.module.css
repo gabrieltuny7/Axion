@@ -3,17 +3,19 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  background-color: #ffffff; /* Fundo branco */
+  background-color: #000000; /* Fundo preto */
+  color: #ffffff; /* Texto branco */
 }
 
 .header {
   width: 100%;
   padding: 1rem;
   background-color: #000000; /* Preto */
-  color: #ffffff; /* Branco */
+  color: #00bfff; /* Azul claro para o texto */
   display: flex;
   justify-content: space-between;
   align-items: center;
+  border-bottom: 1px solid #00bfff; /* Borda azul claro */
 }
 
 .logo h1 {
@@ -30,7 +32,7 @@
 }
 
 .nav a {
-  color: #ffffff; /* Branco */
+  color: #ffffff; /* Branco para os links */
   text-decoration: none;
   transition: color 0.3s ease;
 }
@@ -44,38 +46,40 @@
   width: 100%;
   max-width: 1200px;
   padding: 2rem;
-  background-color: #ffffff; /* Fundo branco */
+  background-color: #000000; /* Fundo preto */
 }
 
 .hero {
   text-align: center;
   padding: 4rem 0;
-  background-color: #f0f8ff; /* Azul claro bem claro para o fundo do hero */
+  background-color: #000000; /* Fundo preto */
+  border-bottom: 1px solid #00bfff; /* Borda azul claro */
 }
 
 .hero h2 {
   font-size: 2.5rem;
   margin-bottom: 1rem;
-  color: #000000; /* Preto */
+  color: #00bfff; /* Azul claro */
 }
 
 .hero p {
   font-size: 1.2rem;
   margin-bottom: 2rem;
-  color: #333333; /* Cinza escuro para o texto */
+  color: #ffffff; /* Branco */
 }
 
 .ctaButton {
   padding: 0.75rem 1.5rem;
   background-color: #00bfff; /* Azul claro */
-  color: #ffffff; /* Branco */
+  color: #000000; /* Preto */
   text-decoration: none;
   border-radius: 5px;
   transition: background-color 0.3s ease;
 }
 
 .ctaButton:hover {
-  background-color: #009acd; /* Azul mais escuro ao passar o mouse */
+  background-color: #ffffff; /* Branco ao passar o mouse */
+  color: #000000; /* Preto */
 }
 
 .section {
@@ -90,15 +94,55 @@
 
 .serviceCard {
   padding: 1rem;
-  border: 1px solid #ddd;
+  border: 1px solid #00bfff; /* Borda azul claro */
   border-radius: 5px;
   text-align: center;
-  background-color: #ffffff; /* Fundo branco */
+  background-color: #000000; /* Fundo preto */
+  color: #ffffff; /* Texto branco */
   transition: box-shadow 0.3s ease;
+  overflow: hidden; /* Para esconder o conteúdo que ultrapassar */
+  position: relative;
 }
 
 .serviceCard:hover {
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra ao passar o mouse */
+  box-shadow: 0 4px 8px rgba(0, 191, 255, 0.3); /* Sombra azul ao passar o mouse */
+}
+
+/* Estilos do Carrossel (Swiper) */
+.swiper-container {
+  width: 100%;
+  height: 100%;
+}
+
+.swiper-slide {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 1rem;
+}
+
+.swiper-slide img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 5px;
+}
+
+.swiper-pagination {
+  position: absolute;
+  bottom: 10px;
+}
+
+.swiper-button-next,
+.swiper-button-prev {
+  color: #00bfff; /* Azul claro para os botões de navegação */
+  transition: color 0.3s ease;
+}
+
+.swiper-button-next:hover,
+.swiper-button-prev:hover {
+  color: #ffffff; /* Branco ao passar o mouse */
 }
 
 .contactForm {
@@ -112,16 +156,16 @@
 .contactForm input,
 .contactForm textarea {
   padding: 0.75rem;
-  border: 1px solid #ddd;
+  border: 1px solid #00bfff; /* Borda azul claro */
   border-radius: 5px;
-  background-color: #ffffff; /* Fundo branco */
-  color: #000000; /* Preto */
+  background-color: #000000; /* Fundo preto */
+  color: #ffffff; /* Texto branco */
 }
 
 .contactForm button {
   padding: 0.75rem;
   background-color: #00bfff; /* Azul claro */
-  color: #ffffff; /* Branco */
+  color: #000000; /* Preto */
   border: none;
   border-radius: 5px;
   cursor: pointer;
@@ -129,7 +173,8 @@
 }
 
 .contactForm button:hover {
-  background-color: #009acd; /* Azul mais escuro ao passar o mouse */
+  background-color: #ffffff; /* Branco ao passar o mouse */
+  color: #000000; /* Preto */
 }
 
 .footer {
@@ -138,6 +183,7 @@
   background-color: #000000; /* Preto */
   color: #ffffff; /* Branco */
   text-align: center;
+  border-top: 1px solid #00bfff; /* Borda azul claro */
 }
 
 .footer a {
